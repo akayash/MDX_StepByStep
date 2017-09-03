@@ -1,0 +1,1817 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="662e8bb8-cce8-444b-a094-0660a430989c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Time</ID>
+  <Name>Date</Name>
+  <CreatedTimestamp>2008-07-17T04:02:24Z</CreatedTimestamp>
+  <LastSchemaUpdate>2008-07-17T04:14:01Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-10751</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1158</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3348</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3348" scrolltop="-12331" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8281" y="17965" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Date" left="-1158" top="-10751" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5344" height="16591" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000e0140000cf400000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimTime" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-12331</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="75" ViewPortX="10" ViewPortY="101" xmlns="">
+          <Shapes NodeWidth="184">
+            <Shape Id="TimeKey" Expanded="true">
+              <Attributes>
+                <Attribute Id="TimeKey" />
+                <Attribute Id="DayNameOfWeek" />
+                <Attribute Id="DayNumberOfMonth" />
+                <Attribute Id="DayNumberOfWeek" />
+                <Attribute Id="DayNumberOfYear" />
+              </Attributes>
+              <Position x="24" y="256" />
+            </Shape>
+            <Shape Id="Fiscal Week" Expanded="false">
+              <Attributes>
+                <Attribute Id="Fiscal Week" />
+                <Attribute Id="Fiscal Week 1" />
+              </Attributes>
+              <Position x="266" y="182" />
+            </Shape>
+            <Shape Id="Fiscal Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Fiscal Year" />
+              </Attributes>
+              <Position x="1332" y="182" />
+            </Shape>
+            <Shape Id="MonthName" Expanded="true">
+              <Attributes>
+                <Attribute Id="MonthName" />
+                <Attribute Id="EnglishMonthName" />
+              </Attributes>
+              <Position x="257" y="306" />
+            </Shape>
+            <Shape Id="CalendarQuarterDesc" Expanded="false">
+              <Attributes>
+                <Attribute Id="CalendarQuarterDesc" />
+                <Attribute Id="CalendarQuarterOfYear" />
+                <Attribute Id="CalendarSemesterOfYearDesc" />
+              </Attributes>
+              <Position x="530" y="306" />
+            </Shape>
+            <Shape Id="CalendarSemesterDesc" Expanded="false">
+              <Attributes>
+                <Attribute Id="CalendarSemesterDesc" />
+              </Attributes>
+              <Position x="818" y="353" />
+            </Shape>
+            <Shape Id="CalendarYear" Expanded="false">
+              <Attributes>
+                <Attribute Id="CalendarYear" />
+              </Attributes>
+              <Position x="1336" y="440" />
+            </Shape>
+            <Shape Id="FiscalQuarterDesc" Expanded="false">
+              <Attributes>
+                <Attribute Id="FiscalQuarterDesc" />
+                <Attribute Id="FiscalQuarterOfYearDesc" />
+                <Attribute Id="FiscalSemesterOfYearDesc" />
+              </Attributes>
+              <Position x="818" y="256" />
+            </Shape>
+            <Shape Id="FiscalSemesterDesc" Expanded="false">
+              <Attributes>
+                <Attribute Id="FiscalSemesterDesc" />
+              </Attributes>
+              <Position x="1133" y="256" />
+            </Shape>
+            <Shape Id="WeekNumberOfYear" Expanded="false">
+              <Attributes>
+                <Attribute Id="WeekNumberOfYear" />
+                <Attribute Id="Calendar Week 1" />
+              </Attributes>
+              <Position x="257" y="440" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2008-07-17T04:15:15Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3afcfd35-e76f-4872-95da-7485a6b37772">
+    <DataSourceViewID>Adventure Works DW</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <ErrorConfiguration dwd:design-time-name="6e73ec1c-bb11-48d8-bc51-6c742b0ad14e">
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Translations>
+    <Translation dwd:design-time-name="7a6c1a90-66f6-442a-b06e-2f386dde8187">
+      <Language>3082</Language>
+      <Caption>Fecha</Caption>
+    </Translation>
+    <Translation dwd:design-time-name="12d74091-d356-4d61-8105-429b6c574a45">
+      <Language>1036</Language>
+      <Caption>Temps</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="da5de148-9f9c-43fd-bd2a-9bbdbb30f754">
+      <ID>Fiscal Year</ID>
+      <Name>Fiscal Year</Name>
+      <Type>FiscalYears</Type>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6707bb75-af70-4527-9013-726cb3bd1788">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c986246-ddab-4597-b6de-62fffc4a0873">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8830e5e9-3162-4b01-84ec-cde3eabc2817">
+        <DataType>WChar</DataType>
+        <DataSize>7</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3942de11-c9e4-48c8-806b-72553e7d05a9">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalYearDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="c9997e15-079b-4cf3-8776-f6a3f4e7942a">
+          <Language>3082</Language>
+          <Caption>Año Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="11acdd06-f387-437b-a114-f5ba3154a31f">
+          <Language>1036</Language>
+          <Caption>Année Fiscale</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="748b7ff9-3449-43d6-9e4d-574c98570f8d">
+        <DataType>SmallInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="22a09ec0-4238-4e29-bc02-b4550723ebcf">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalYear</ColumnID>
+        </Source>
+      </ValueColumn>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="06b342e3-992e-4a8c-8324-4733874b3207">
+      <ID>TimeKey</ID>
+      <Name>Date</Name>
+      <Type>Date</Type>
+      <Usage>Key</Usage>
+      <EstimatedCount>1158</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66b16893-de9c-48da-b6fb-fa9a2089b111">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1092627f-f42f-4161-b5a6-1053b44b5121">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>DateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a48de8ae-c1e2-4d93-b1e0-f8471d58b3bb">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="63397604-fd69-4a5c-910f-18270893ab22">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>SimpleDate</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="9aef84a2-0a33-486e-9196-3b9e23e6bd3b">
+          <Language>3082</Language>
+          <Caption>Fecha</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="4e28f748-939e-4ec7-90c2-5c1b779c50f6">
+          <Language>1036</Language>
+          <Caption>Date</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f73ee17d-cc1d-43dc-bb4a-215f990b4b5b">
+          <AttributeID>DayNumberOfWeek</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Day of Week</Name>
+          <Translations>
+            <Translation dwd:design-time-name="e3a69405-243b-446c-9b8f-a44a17c3ba7d">
+              <Language>3082</Language>
+              <Caption>Día de la Semana</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="789d7ec8-5183-48d4-9397-733590cbecd2">
+              <Language>1036</Language>
+              <Caption>Jour de la Semaine</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6e616d5-eeab-40a3-b94c-93418b63f253">
+          <AttributeID>DayNameOfWeek</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Day Name</Name>
+          <Translations>
+            <Translation dwd:design-time-name="73125be2-7256-48d8-9a86-25507affe37e">
+              <Language>3082</Language>
+              <Caption>Nombre del Día</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="72f5ecc1-1ac0-45ef-82be-06903838f6c7">
+              <Language>1036</Language>
+              <Caption>Nom du Jour de la Semaine</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="132e9e98-f1f3-456f-a6cf-32d0ecfa0145">
+          <AttributeID>DayNumberOfMonth</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Day of Month</Name>
+          <Translations>
+            <Translation dwd:design-time-name="6f2988fc-29ef-4454-ad40-d4a3f76a5807">
+              <Language>3082</Language>
+              <Caption>Día del Mes</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="6eebb4f0-4553-41d8-9044-1c21b3b3f9ae">
+              <Language>1036</Language>
+              <Caption>Jour du Mois</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b4af2ff3-00d2-4ea5-b605-3554ec0abba2">
+          <AttributeID>DayNumberOfYear</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Day of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="03bb6e30-d65e-4874-9de8-b68d26322bda">
+              <Language>3082</Language>
+              <Caption>Día del Año</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="28f74484-daf2-4c1c-804d-266428772fe1">
+              <Language>1036</Language>
+              <Caption>Jour De l'Année</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c6e60a1-e73f-4a5c-9af7-7dfdcce54fc1">
+          <AttributeID>WeekNumberOfYear</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Week</Name>
+          <Translations>
+            <Translation dwd:design-time-name="dce579a0-54a3-4878-bff7-efbff486ba9c">
+              <Language>3082</Language>
+              <Caption>Semana del Calendario</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="02968483-5d31-4e4a-b98c-7169b918c805">
+              <Language>1036</Language>
+              <Caption>Semaine Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2a9f4cc-6e68-4cac-8ffe-b7a61ed531f3">
+          <AttributeID>MonthName</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month Name</Name>
+          <Translations>
+            <Translation dwd:design-time-name="6fb8444a-141a-49f4-8920-0c8da7638451">
+              <Language>3082</Language>
+              <Caption>Nombre del Mes</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="d7edaa75-4909-4017-bb08-5b39534d06e2">
+              <Language>1036</Language>
+              <Caption>Mois Civile</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a36a7bf7-3c69-4a13-8d01-ffbda7a1cca1">
+          <AttributeID>Fiscal Week</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Week</Name>
+          <Translations>
+            <Translation dwd:design-time-name="a7d89a52-f52f-4dc9-8e25-af76d9ca1d88">
+              <Language>3082</Language>
+              <Caption>Semana Fiscal</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="de07fc10-8ab9-4ed7-9510-ee061e2a1de2">
+              <Language>1036</Language>
+              <Caption>Semaine Fiscale</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="5956c51a-59a3-4f34-a76d-8cb1979236c2">
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e0dd4a9c-a65d-4188-9da3-22b533cfcbec">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FullDateAlternateKey</ColumnID>
+        </Source>
+      </ValueColumn>
+      <GroupingBehavior>DiscourageGrouping</GroupingBehavior>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a76be79b-366a-49f8-bf80-cdc3a52a4b2c">
+      <ID>CalendarQuarterDesc</ID>
+      <Name>Calendar Quarter</Name>
+      <Type>Quarters</Type>
+      <EstimatedCount>13</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1490607c-7a30-43db-a8f0-ebcc0a0d0410">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ccbe79bf-4b28-4997-9b93-e5fc5d102e4c">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarYear</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="37880e6c-0405-4b58-9435-40adc4be66c7">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b55bfa08-2ada-446c-a644-05d04f5b4182">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarQuarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b3f1e0d2-981c-40c1-9b54-4ac5e7161852">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d1a75e7b-b23d-4eb9-abea-25870023e6ea">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarQuarterDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="30c3e232-d628-4c10-85b3-67be5885b799">
+          <Language>3082</Language>
+          <Caption>Cuarto del Calendario</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="29af2ded-d337-492a-8eca-0da5f5bf111b">
+          <Language>1036</Language>
+          <Caption>Trimestre Civile</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="66f0e3f4-c4f9-4ba6-bebf-b9901a615ad6">
+          <AttributeID>FiscalQuarterDesc</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Quarter</Name>
+          <Translations>
+            <Translation dwd:design-time-name="e776307e-d009-43fa-811e-76df3511c0d6">
+              <Language>3082</Language>
+              <Caption>Cuarto Fiscal</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="0c4e05c9-8928-4ba5-9168-3eb7e71aecdf">
+              <Language>1036</Language>
+              <Caption>Trimestre Fiscal</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1c9213b-99f8-4d83-ad6a-dc4d6e60da4c">
+          <AttributeID>CalendarSemesterDesc</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Semester</Name>
+          <Translations>
+            <Translation dwd:design-time-name="55a657cc-bbed-4ab2-a620-771e2c2085c2">
+              <Language>3082</Language>
+              <Caption>Semestre del Calendario</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="90415f65-41ad-4eca-a411-f68ed7513c0a">
+              <Language>1036</Language>
+              <Caption>Semestre Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d7928ad-d8dd-4469-b52b-4acd51b4642b">
+          <AttributeID>CalendarSemesterOfYearDesc</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Semester of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="9713b133-0f1b-432f-8156-9e6c694c9914">
+              <Language>3082</Language>
+              <Caption>Semestre del Calendario del Año</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="de5d641a-8c27-48f9-89bc-9cd9071e9c42">
+              <Language>1036</Language>
+              <Caption>Semestre de l'Année Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fe75870b-c455-4019-befd-0171af36d972">
+          <AttributeID>CalendarQuarterOfYear</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Quarter of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="7d379910-61b6-4ea3-b12d-9f4b80279bc7">
+              <Language>3082</Language>
+              <Caption>Trimestre Calendario del Año</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="4a87286c-4668-401b-b0f7-6882b485b49b">
+              <Language>1036</Language>
+              <Caption>Trimestre de l'Année Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ca6792f-ab17-4065-8c49-20b7bd9df352">
+      <ID>FiscalQuarterDesc</ID>
+      <Name>Fiscal Quarter</Name>
+      <Type>FiscalQuarters</Type>
+      <EstimatedCount>13</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c5cf24e-a579-4854-bcee-804730c32b06">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4d1696c-6a93-404a-ab12-3d5294512471">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalYear</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="db6bdcf3-4fcd-4b9a-b037-87afc180a816">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d06292c-5881-45be-a4f9-8b4b33a3ea3e">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalQuarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7b5f53a4-ae8d-4a0f-aa86-cdb8bde54adc">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="614bb9c4-1c33-4ee5-bf21-b523e9c96113">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalQuarterDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="bacf839e-b7db-4840-979f-cd75c4813e74">
+          <Language>3082</Language>
+          <Caption>Cuarto Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="52b17ed9-d582-4e06-9c99-01341baa2eeb">
+          <Language>1036</Language>
+          <Caption>Trimestre Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d11c4427-54fe-43b9-8d03-7d9c98b9bd01">
+          <AttributeID>FiscalSemesterDesc</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Semester</Name>
+          <Translations>
+            <Translation dwd:design-time-name="03708544-3fe3-48ad-b8fc-974490aa250e">
+              <Language>3082</Language>
+              <Caption>Semestre Fiscal</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="116ab761-3e34-4038-a37a-6c919d755f20">
+              <Language>1036</Language>
+              <Caption>Semestre Fiscal</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4e88d69f-14a7-4ccb-86a2-5aa4ff0518bc">
+          <AttributeID>FiscalSemesterOfYearDesc</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Semester of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="afc2c4ef-3fb9-42aa-a1c2-b864789b4e77">
+              <Language>3082</Language>
+              <Caption>Semestre Fiscal del Año</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="6ec1faa4-8913-485b-9b69-c8f73e2fe56d">
+              <Language>1036</Language>
+              <Caption>Semestre de l'Année Fiscale</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6feccc5b-fd86-47d7-8bf1-e5898940c02c">
+          <AttributeID>FiscalQuarterOfYearDesc</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Quarter of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="ef508101-33c0-4e63-b4d8-1369a7b6c7ae">
+              <Language>3082</Language>
+              <Caption>Trimestre Fiscal del Año</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="490ab41a-8592-46a4-9cd9-bf47d28e2d29">
+              <Language>1036</Language>
+              <Caption>Trimestre de l'Année Fiscale</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="2d149710-4ccc-4cc5-a4d8-29e21c290080">
+      <ID>CalendarSemesterDesc</ID>
+      <Name>Calendar Semester</Name>
+      <Type>HalfYears</Type>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="303b8c91-7ead-4952-916a-cdd8c5004e30">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92a6e1c7-1c76-4b2a-b6d7-aefed910d4c4">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarYear</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ae9d4805-92cc-44a1-8745-1ab63ee2b050">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5296200d-636c-471f-9abc-8d24c4cc52c8">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarSemester</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9a60ac93-0e24-47bf-be01-42c1c538530e">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="92c12514-8bbf-4379-b4ce-715d0afdd811">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarSemesterDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="cf6895d5-87bc-4201-8f65-28450d9b2a0f">
+          <Language>3082</Language>
+          <Caption>Semestre del Calendario</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="f4d6805c-54b7-4ea5-b6bd-ac0f1292d670">
+          <Language>1036</Language>
+          <Caption>Semestre Civile</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bedf7f34-2f0e-42cb-84c6-dcc414d5e34c">
+          <AttributeID>CalendarYear</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="46b02980-bdce-4ce6-9e39-63887d00aec4">
+              <Language>3082</Language>
+              <Caption>Año Calendario</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="504725f3-d998-478a-96d0-015de017653d">
+              <Language>1036</Language>
+              <Caption>Année Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="23ce2311-c5c5-4039-a73d-44aef1fbe51f">
+      <ID>FiscalSemesterDesc</ID>
+      <Name>Fiscal Semester</Name>
+      <Type>FiscalHalfYears</Type>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a7cdd5f9-e7ed-407b-aa37-45134100bd8c">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3480feac-e217-4b55-bea9-7eedf0e8401b">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalYear</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1864a16e-c116-412a-97f0-ed8dedf801ba">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d3242b4-4f2d-4820-9352-ecd8cc8b2f77">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalSemester</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f428f70e-3043-4c50-8592-32d63b652a2c">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="09b78baa-48ea-4152-b78a-5fc3f9d1842e">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalSemesterDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="9788e1dc-261b-42ea-be94-0eefcbbae711">
+          <Language>3082</Language>
+          <Caption>Semestre Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="fab15f0b-8de2-4dfd-96fd-f5130b347e0f">
+          <Language>1036</Language>
+          <Caption>Semestre Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a158a5c4-0506-4051-b6b9-913d55a1e8cb">
+          <AttributeID>Fiscal Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="edff0b54-2906-4da9-8219-1251803416ec">
+              <Language>3082</Language>
+              <Caption>Año Fiscal</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="1c10fe6d-cb07-4f53-8fd8-d2b04cc28ff2">
+              <Language>1036</Language>
+              <Caption>Année Fiscale</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="50fff3e0-97ca-486e-b15d-ba63f39cae7d">
+      <ID>DayNumberOfWeek</ID>
+      <Name>Day of Week</Name>
+      <Type>DayOfWeek</Type>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f31aeff-be0d-4e38-baf1-61724c5d2cf1">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d0afd0d-c0f7-4f1a-8463-d0b4534c7e54">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>DayNumberOfWeek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1c87e851-c774-4e6a-9211-80aa3b513d2c">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="890667df-032c-40ef-8168-d90dfd3d708b">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>DayNumberOfWeek</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="05782a14-bb42-44fc-8b04-0d4dd325221c">
+          <Language>3082</Language>
+          <Caption>Día de la Semana</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="e063bbd6-c2d7-415c-a47c-af4b468c359e">
+          <Language>1036</Language>
+          <Caption>Jour de la Semaine</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4ac7ccc7-cf60-4e58-bf32-0a40e0f22621">
+      <ID>DayNameOfWeek</ID>
+      <Name>Day Name</Name>
+      <Type>Days</Type>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c14283ea-2b85-45a9-96fe-c9b536029dc1">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b906c88-b61a-466a-97de-2da7e2dee679">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>DayNumberOfWeek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b74363dc-bc5b-49ff-877b-758366226bf7">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="07dd03a2-653e-4793-93c7-85182b3502e7">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>EnglishDayNameOfWeek</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="e206635b-b461-49b8-983e-414b4bc58162">
+          <Language>3082</Language>
+          <Caption>Nombre del Día</Caption>
+          <CaptionColumn dwd:design-time-name="68251cd1-9388-4aa4-91f3-0d43318b1d49">
+            <DataType>WChar</DataType>
+            <DataSize>10</DataSize>
+            <Collation>Latin1_General_CI_AS</Collation>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5240d9a8-7be9-4c39-8cf6-74aa840db51d">
+              <TableID>dbo_DimTime</TableID>
+              <ColumnID>SpanishDayNameOfWeek</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+        <Translation dwd:design-time-name="68073100-97de-4099-8e27-06c4e8a11a86">
+          <Language>1036</Language>
+          <Caption>Nom du Jour de la Semaine</Caption>
+          <CaptionColumn dwd:design-time-name="a1b8e744-7f14-4412-8cd3-45572d214df3">
+            <DataType>WChar</DataType>
+            <DataSize>10</DataSize>
+            <Collation>Latin1_General_CI_AS</Collation>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e58f9222-182d-4658-95dd-3271510ee3bf">
+              <TableID>dbo_DimTime</TableID>
+              <ColumnID>FrenchDayNameOfWeek</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="d1f9e129-f812-4f7a-9c21-c7ec7cc73d0c">
+        <DataType>UnsignedTinyInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1d2da55b-3f78-4e08-b9b4-9ef4dec3c9e5">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>DayNumberOfWeek</ColumnID>
+        </Source>
+      </ValueColumn>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0da56fc-4264-49e4-aa53-851ab8991851">
+      <ID>DayNumberOfMonth</ID>
+      <Name>Day of Month</Name>
+      <Type>DayOfMonth</Type>
+      <EstimatedCount>31</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af7bb563-4ed6-4768-9d09-4a41c6fcacc5">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39f9e3a0-03c8-4eb1-92a4-130e6d5f7b68">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>DayNumberOfMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="670e4e6f-994d-4522-a1b5-342b0f317d2a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d03bd3f2-b07f-4200-8f46-86284ea77958">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>DayNumberOfMonth</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="16d74b19-a15a-4679-ad01-42b96c6cf279">
+          <Language>3082</Language>
+          <Caption>Día del Mes</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="51014cc8-af9a-45e3-afb3-63931bab96a9">
+          <Language>1036</Language>
+          <Caption>Jour du Mois</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f4194a2-27bd-4d30-94ce-7a51da8c06b4">
+      <ID>DayNumberOfYear</ID>
+      <Name>Day of Year</Name>
+      <Type>DayOfYear</Type>
+      <EstimatedCount>365</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7854737a-3c84-4d24-8441-0f852a55bbaf">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15083cca-021a-4df4-a541-e2c91593232e">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>DayNumberOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c04e989e-2a8d-4aed-80a7-c3470d653662">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="39e6ca32-18f7-4697-8c8e-78cfe9b857e3">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>DayNumberOfYear</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="ecf27531-c230-487d-b2a8-37900622b4f7">
+          <Language>3082</Language>
+          <Caption>Día del Año</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="2f1c9c5e-fb49-4f56-ae21-bca1d3ced820">
+          <Language>1036</Language>
+          <Caption>Jour De l'Année</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="02db5d5e-c224-43a9-8272-d42f40e155d6">
+      <ID>WeekNumberOfYear</ID>
+      <Name>Calendar Week</Name>
+      <Type>Weeks</Type>
+      <EstimatedCount>169</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d17e783-a5a8-430e-a273-7889365ead97">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="133136f7-d941-458e-a96b-9b99515f7e2f">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>WeekNumberOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fe106ea6-f4b3-477d-895b-9fa1f9dfb327">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="341307aa-4bb3-4963-a4ef-142998d2f81d">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3da3ff95-571d-420e-bd2a-021f9f5ee130">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0e5fa54b-9207-4fe9-b4c1-746c96f6b4b2">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarWeekDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="44b25dcb-33db-49e0-9ff2-53d7f692bd0e">
+          <Language>3082</Language>
+          <Caption>Semana del Calendario</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="f0aa3f3f-7481-46ab-bdaa-f905e7783caf">
+          <Language>1036</Language>
+          <Caption>Semaine Civile</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3387c15c-a5f1-4e3b-862d-aaf309d88f4c">
+          <AttributeID>CalendarYear</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="20c2f8e4-141c-4223-913a-edad608a4c81">
+              <Language>3082</Language>
+              <Caption>Año Calendario</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="5250a7b2-76d1-469d-be8b-9de949bab170">
+              <Language>1036</Language>
+              <Caption>Année Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cb015df0-74e1-4bcb-9fec-4ed25eef57c1">
+          <AttributeID>Calendar Week 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Week of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="f9ff4170-544a-47a7-be6d-452a94989fb3">
+              <Language>3082</Language>
+              <Caption>Semana Calendario del Año</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="291bce94-da6e-4e7d-a7f1-53f200ab9b66">
+              <Language>1036</Language>
+              <Caption>Semaine de l'Année Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="69ee31bf-1ee5-4838-97be-7a2c3e7931d8">
+      <ID>MonthName</ID>
+      <Name>Month Name</Name>
+      <Type>Months</Type>
+      <EstimatedCount>38</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13678841-cc3d-4155-ab4f-2c68858057cc">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62a06a8c-7681-46c2-89d1-fee59a9e77d3">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarYear</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5b29ca4d-58c3-4769-bedd-b40e4e0153db">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="009cc813-06fc-4128-a543-d7d577d9078e">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>MonthNumberOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cfc51b5b-b519-449e-80a1-52bf1ea0b3e9">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="390432b1-8814-4622-99ff-a8c0d5356fd5">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>MonthName</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="66b7af30-8350-4b91-8170-11970414ff6a">
+          <Language>3082</Language>
+          <Caption>Nombre del Mes</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="1b4235d2-77c9-476a-b327-1aa21ac7ae15">
+          <Language>1036</Language>
+          <Caption>Mois Civile</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a3c6b21c-cf80-4ec6-9dc9-95a4f9e7b4eb">
+          <AttributeID>CalendarQuarterDesc</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Calendar Quarter</Name>
+          <Translations>
+            <Translation dwd:design-time-name="8cfba9e5-4256-4df8-be22-5b7fa886db23">
+              <Language>3082</Language>
+              <Caption>Cuarto del Calendario</Caption>
+              <DisplayFolder>Calendario</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="8d49b672-56c6-44f0-bffb-7b5a4b935c05">
+              <Language>1036</Language>
+              <Caption>Trimestre Civile</Caption>
+              <DisplayFolder>Calendrier</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e46baa79-d1c9-4110-adad-4eabd76378f8">
+          <AttributeID>EnglishMonthName</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="ddb7c934-ede8-4d2b-99a5-525ebf0ee206">
+              <Language>3082</Language>
+              <Caption>Mes del Año</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="a473cd00-f20a-4703-aa6a-b93b20b6be9f">
+              <Language>1036</Language>
+              <Caption>Mois d'Année</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="1c0adefb-b51f-4035-97bd-b6a8ba3b3345">
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3c2a2b00-124b-44d6-941d-86bbb6576ac6">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>MonthNameValue</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="8155d2b5-c8d5-451d-9b6b-6dbf6c6786f0">
+      <ID>CalendarYear</ID>
+      <Name>Calendar Year</Name>
+      <Type>Years</Type>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7daa4369-ee30-4634-a389-42d849c80629">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42701b16-bb70-4397-bd69-43faf6398757">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f702a40c-35bf-4823-940f-bf05b2d4f1c3">
+        <DataType>WChar</DataType>
+        <DataSize>7</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="af3c5ffd-6290-4fde-a855-b3740fc0053f">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarYearDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="493a1bbf-1aae-4874-a24b-6f06dc28e126">
+          <Language>3082</Language>
+          <Caption>Año Calendario</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="83a78d7a-c1dd-47ed-8f08-9883b51a9c2a">
+          <Language>1036</Language>
+          <Caption>Année Civile</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="eecaaa60-4161-4991-bdf0-4b0783f3c43b">
+        <DataType>SmallInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cc05fa20-66a3-4fd1-b061-7cd808b73999">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarYear</ColumnID>
+        </Source>
+      </ValueColumn>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="02df8687-9479-41de-b251-f737600fe737">
+      <ID>FiscalSemesterOfYearDesc</ID>
+      <Name>Fiscal Semester of Year</Name>
+      <Type>FiscalHalfYearOfYear</Type>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67621410-a240-4c20-a7ae-ab72a1b23d04">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f81699b-1dbb-4934-8513-4ddd287fd20a">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalSemesterOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e624742b-226a-4755-8113-17af3d836250">
+        <DataType>WChar</DataType>
+        <DataSize>5</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="81af5be5-4b4f-4629-a78d-a7f077b93c00">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalSemesterOfYear</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="8114a555-6204-4bd7-b9dc-161f836965d7">
+          <Language>3082</Language>
+          <Caption>Semestre Fiscal del Año</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="939cdd50-d716-4fb9-94c8-0cd7f3ba99e5">
+          <Language>1036</Language>
+          <Caption>Semestre de l'Année Fiscale</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="cdd8d12d-92ef-412d-b19a-7ac6e24b9257">
+      <ID>CalendarSemesterOfYearDesc</ID>
+      <Name>Calendar Semester of Year</Name>
+      <Type>HalfYearOfYear</Type>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="53014e39-68f1-4c2a-a688-3943ce515b12">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c522a12b-4847-4922-ae5a-f34358213225">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarSemesterOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ac12a586-4c19-4c91-a550-850410f7f612">
+        <DataType>WChar</DataType>
+        <DataSize>5</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="df345b83-503f-42cb-895b-93de78da466f">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarSemesterOfYear</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="8e510404-154b-49b7-8195-05c51821e00e">
+          <Language>3082</Language>
+          <Caption>Semestre del Calendario del Año</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="d64885db-17eb-45d2-9579-602aa2b513e6">
+          <Language>1036</Language>
+          <Caption>Semestre de l'Année Civile</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="37b935f5-1bfc-4250-813b-e7c5b0ebab4f">
+      <ID>FiscalQuarterOfYearDesc</ID>
+      <Name>Fiscal Quarter of Year</Name>
+      <Type>FiscalQuarterOfYear</Type>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa395dfc-d695-47ff-aaa2-c0d434ac0e47">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0723d3c5-e85d-43de-9786-7b198c5a6731">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalQuarterOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7bc6c6a8-d1c9-4871-913e-6591723248c3">
+        <DataType>WChar</DataType>
+        <DataSize>5</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7b34ed4b-d4b0-402f-93c3-313974724069">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalQuarterOfYear</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="2da88e9d-178c-446b-b442-72f388ade6cc">
+          <Language>3082</Language>
+          <Caption>Trimestre Fiscal del Año</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="3e66ccab-9975-45d1-bf20-815363f0804e">
+          <Language>1036</Language>
+          <Caption>Trimestre de l'Année Fiscale</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="2210fc1c-436c-457e-98fa-e8a2965b660b">
+      <ID>CalendarQuarterOfYear</ID>
+      <Name>Calendar Quarter of Year</Name>
+      <Type>QuarterOfYear</Type>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2aca008a-0298-4543-8f39-5b43971cec50">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19baef74-3d72-4124-beb2-e07763ba18af">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>CalendarQuarterOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="743d8e63-b11d-4d71-9d58-498da52004c6">
+        <DataType>WChar</DataType>
+        <DataSize>5</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fb87ecd0-5485-4365-9b26-66f106629279">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarQuarterOfYear</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="3871ba13-d008-4d9b-99eb-2e2c9bb0d4a6">
+          <Language>3082</Language>
+          <Caption>Trimestre Calendario del Año</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="813336ef-e5e7-422a-8038-205f7d0fcc56">
+          <Language>1036</Language>
+          <Caption>Trimestre de l'Année Civile</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a70b1db9-4504-4501-a329-670fad87318d">
+      <ID>EnglishMonthName</ID>
+      <Name>Month of Year</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="11cbae89-cde2-465d-b153-3685cec5e155">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="913f94ef-5737-4561-b26b-f45c13049ada">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>MonthNumberOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4b445db7-7fc7-49a8-921c-ccf6c5ff9b21">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cee84ed4-9ec4-4e47-8f21-d52017fb029f">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>EnglishMonthName</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="d0e611d0-9d6c-486a-8099-ad2876fe8f83">
+          <Language>3082</Language>
+          <Caption>Mes del Año</Caption>
+          <CaptionColumn dwd:design-time-name="39e4ce68-e3ac-4720-bfbb-52e9597bb669">
+            <DataType>WChar</DataType>
+            <DataSize>10</DataSize>
+            <Collation>Latin1_General_CI_AS</Collation>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="54261601-b24b-4e80-ae74-1deb93764e96">
+              <TableID>dbo_DimTime</TableID>
+              <ColumnID>SpanishMonthName</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+        <Translation dwd:design-time-name="d5255f7c-a814-4105-9206-336a5e000956">
+          <Language>1036</Language>
+          <Caption>Mois d'Année</Caption>
+          <CaptionColumn dwd:design-time-name="41a3669d-22c1-4c47-bc22-cb7672699d2b">
+            <DataType>WChar</DataType>
+            <DataSize>10</DataSize>
+            <Collation>Latin1_General_CI_AS</Collation>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c87c3cfe-45a3-49e9-9a7e-16fa091271eb">
+              <TableID>dbo_DimTime</TableID>
+              <ColumnID>FrenchMonthName</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="7d78bf61-6c3b-4236-9c54-14c9d8b50f2f">
+        <DataType>UnsignedTinyInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4cbc3279-d922-453d-856f-f56257919ad8">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>MonthNumberOfYear</ColumnID>
+        </Source>
+      </ValueColumn>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="2ff2964c-62c0-459d-b5c5-332c2fc0fa4a">
+      <ID>Fiscal Week</ID>
+      <Name>Fiscal Week</Name>
+      <Type>FiscalWeeks</Type>
+      <EstimatedCount>169</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1db37b8-0f81-4fa5-a84f-7a36db79d40b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c008cbf-f112-4323-9aaf-b8e6f7638906">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalWeekNumberOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b07bf53b-79a4-4233-af55-3553f8971eb2">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9746f2ab-cd4f-403d-9e1b-b5d4bb24da75">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d20e4c1e-0e15-4972-ac0e-a8c70e7f0608">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e6631d18-7535-4e2e-83d5-016ecb7b1def">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalWeekDesc</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="28f56966-1519-41ea-8682-aba03fc11910">
+          <Language>3082</Language>
+          <Caption>Semana Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="f63feec3-1377-4e92-ad1f-9bfdd360ddd0">
+          <Language>1036</Language>
+          <Caption>Semaine Fiscale</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d2b79917-f252-492f-ac7f-6b4fcd596e82">
+          <AttributeID>Fiscal Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="790119a6-3311-4445-8323-37b4d61f3ab7">
+              <Language>3082</Language>
+              <Caption>Año Fiscal</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="320789af-af08-408a-a083-79e73cff05f7">
+              <Language>1036</Language>
+              <Caption>Année Fiscale</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c28390f2-9f4c-4a55-b41b-b2ceb2ccad48">
+          <AttributeID>Fiscal Week 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Fiscal Week of Year</Name>
+          <Translations>
+            <Translation dwd:design-time-name="79818086-0a14-4748-8b08-f396be2af155">
+              <Language>3082</Language>
+              <Caption>Semana Fiscal del Año</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+            <Translation dwd:design-time-name="e9a5c1a6-7f43-4178-8e77-3e4bc052d8d3">
+              <Language>1036</Language>
+              <Caption>Semaine de l'Année Fiscale</Caption>
+              <DisplayFolder>Fiscal</DisplayFolder>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fee08cc-5e40-4647-ad18-29e8474713c7">
+      <ID>Calendar Week 1</ID>
+      <Name>Calendar Week of Year</Name>
+      <Type>WeekOfYear</Type>
+      <EstimatedCount>53</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="987aa1aa-41e9-4100-a353-aa721e477279">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfa60b8c-3f2e-4535-861d-380a5d7c9dfe">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>WeekNumberOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b7bbb888-67fe-4376-bdef-87abbc250bdb">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f38caaf9-79b3-42e0-9416-17b0cb0daee8">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>CalendarWeek</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="6f8a4ef2-23e3-4718-90e5-0651d4cecef8">
+          <Language>3082</Language>
+          <Caption>Semana Calendario del Año</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="131ee67f-7d27-4699-8f92-860c83b6e5f0">
+          <Language>1036</Language>
+          <Caption>Semaine de l'Année Civile</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="e4ccb6f7-d2e2-48d1-86aa-2194ce2a8c53">
+      <ID>Fiscal Week 1</ID>
+      <Name>Fiscal Week of Year</Name>
+      <Type>FiscalWeekOfYear</Type>
+      <EstimatedCount>53</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e2618e62-5fbb-4010-88bd-07c93a235f19">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29ab4aee-fff1-476f-b370-249aa4b219ab">
+            <TableID>dbo_DimTime</TableID>
+            <ColumnID>FiscalWeekNumberOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e3d41344-abac-4fa0-8903-435aff8797e1">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0e967991-274f-48a7-be89-dc47fd22dfe5">
+          <TableID>dbo_DimTime</TableID>
+          <ColumnID>FiscalWeek</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="465235f7-5e2b-4a0e-bc2f-a024da88dbf5">
+          <Language>3082</Language>
+          <Caption>Semana Fiscal del Año</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="d98682de-6856-48a9-abc6-f0aa71d94d81">
+          <Language>1036</Language>
+          <Caption>Semaine de l'Année Fiscale</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All Periods</AttributeAllMemberName>
+  <AttributeAllMemberTranslations>
+    <AttributeAllMemberTranslation dwd:design-time-name="597b888c-957d-4365-827c-8149925f6fbb">
+      <Language>3082</Language>
+      <Caption>Todos los Períodos</Caption>
+    </AttributeAllMemberTranslation>
+    <AttributeAllMemberTranslation dwd:design-time-name="72fa05a8-d1e6-4ff9-8ec1-962ac4692ab8">
+      <Language>1036</Language>
+      <Caption>Toutes les Périodes</Caption>
+    </AttributeAllMemberTranslation>
+  </AttributeAllMemberTranslations>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e49712ce-30c2-4af4-8102-aa6a3aa49c8e">
+      <ID>Fiscal Year -  Fiscal Quarter</ID>
+      <Name>Fiscal</Name>
+      <DisplayFolder>Fiscal</DisplayFolder>
+      <Translations>
+        <Translation dwd:design-time-name="ce3926f5-3d59-4e52-82ca-e20585057fbb">
+          <Language>3082</Language>
+          <Caption>Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="b4439dc3-ae6b-4821-ae41-21b96fb2071b">
+          <Language>1036</Language>
+          <Caption>Fiscal</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AllMemberName>All Periods</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation dwd:design-time-name="d2e4d187-9868-43e2-b3e7-0eeac72f4bc9">
+          <Language>3082</Language>
+          <Caption>Todos los Períodos</Caption>
+        </AllMemberTranslation>
+        <AllMemberTranslation dwd:design-time-name="dac8b65c-f77c-4475-bbb5-cdefc9e7e50c">
+          <Language>1036</Language>
+          <Caption>Toutes les Périodes</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level dwd:design-time-name="f59ed588-8cb5-4bdc-9200-5828c2411a97">
+          <ID>Fiscal Year</ID>
+          <Name>Fiscal Year</Name>
+          <SourceAttributeID>Fiscal Year</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="6a33b2f4-3236-4af6-9720-fac4acd00e33">
+              <Language>3082</Language>
+              <Caption>Año Fiscal</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="16b8cd2f-1e74-4775-b1cc-b7db2e5b6327">
+              <Language>1036</Language>
+              <Caption>Année Fiscale</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="6043e6d4-a3ee-4cf1-bc0a-d2d6351eaa56">
+          <ID>Fiscal Semester</ID>
+          <Name>Fiscal Semester</Name>
+          <SourceAttributeID>FiscalSemesterDesc</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="6e48ca58-d89b-47be-82cd-9c19cdf9ee6a">
+              <Language>3082</Language>
+              <Caption>Semestre Fiscal</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="33fd0b80-2df1-4913-9508-0b86c21647f6">
+              <Language>1036</Language>
+              <Caption>Semestre Fiscal</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="26b651ba-b119-4793-a946-6077c88797cd">
+          <ID>Fiscal Quarter</ID>
+          <Name>Fiscal Quarter</Name>
+          <SourceAttributeID>FiscalQuarterDesc</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="a3a88b0e-756a-4467-a084-1007dca9c33f">
+              <Language>3082</Language>
+              <Caption>Trimestre Fiscal</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="72170628-253d-4808-adec-1953ee2b48ad">
+              <Language>1036</Language>
+              <Caption>Trimestre Fiscal</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="11218a3c-692e-49aa-8950-3a99e76d59f4">
+          <ID>Month Name</ID>
+          <Name>Month</Name>
+          <SourceAttributeID>MonthName</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="b4a25de1-ddb5-417e-bde3-98684b5f2e7b">
+              <Language>3082</Language>
+              <Caption>Mes</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="2c7f5e04-8de0-4a61-8215-5ef06ffd1545">
+              <Language>1036</Language>
+              <Caption>Mois</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="fd72ade2-86a2-438d-83ae-6304ae331fd8">
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <SourceAttributeID>TimeKey</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="5983cd6d-21b9-4fc0-aed8-c77cc60b62d6">
+              <Language>3082</Language>
+              <Caption>Fecha</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="ab09431f-4e58-4ccc-a143-e2f98f69f54d">
+              <Language>1036</Language>
+              <Caption>Date</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="199e26c2-3ec8-46d3-aa61-fcaceb7e829d">
+      <ID>Hierarchy</ID>
+      <Name>Calendar</Name>
+      <DisplayFolder>Calendar</DisplayFolder>
+      <Translations>
+        <Translation dwd:design-time-name="80dd6a3a-a8df-4db7-8b0b-f2eda8c242eb">
+          <Language>3082</Language>
+          <Caption>Calendario</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="f26c3d34-f662-4c74-8d6a-5007ff84857b">
+          <Language>1036</Language>
+          <Caption>Calendrier</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AllMemberName>All Periods</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation dwd:design-time-name="6f79c16d-d85d-4cc4-b269-45bd15a54f5b">
+          <Language>3082</Language>
+          <Caption>Todos los Períodos</Caption>
+        </AllMemberTranslation>
+        <AllMemberTranslation dwd:design-time-name="92474348-16ee-4972-b479-10610c6d330e">
+          <Language>1036</Language>
+          <Caption>Toutes les Périodes</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level dwd:design-time-name="7bfddffd-2f00-453f-bf02-5a298955bfef">
+          <ID>CalendarYear</ID>
+          <Name>Calendar Year</Name>
+          <SourceAttributeID>CalendarYear</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="8774b2b8-6094-45da-9cc2-7b8dfa32f2db">
+              <Language>3082</Language>
+              <Caption>Año Calendario</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="523d73fd-ef2f-4b89-909b-04dcd2ca6f34">
+              <Language>1036</Language>
+              <Caption>Année Civile</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="5f0feb2e-7f5f-44e1-9ab9-7041c4baa1cc">
+          <ID>Calendar Semester</ID>
+          <Name>Calendar Semester</Name>
+          <SourceAttributeID>CalendarSemesterDesc</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="208710d9-0920-4568-b96d-13c0724fcec0">
+              <Language>3082</Language>
+              <Caption>Semestre Calendario</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="cef4d551-6715-47ef-a678-b8505fa2ea1a">
+              <Language>1036</Language>
+              <Caption>Semestre Civile</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="cabaa6bf-4f9d-4aa8-a5df-0dcd5707d10f">
+          <ID>Calendar Quarter</ID>
+          <Name>Calendar Quarter</Name>
+          <SourceAttributeID>CalendarQuarterDesc</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="354d8e9f-bab5-47e2-863b-b9ff3b7b298b">
+              <Language>3082</Language>
+              <Caption>Trimestre Calendario</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="de1a2d00-a087-423d-ac51-2963d01aa0d1">
+              <Language>1036</Language>
+              <Caption>Trimestre Civile</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="6987057f-f84e-4736-9f19-058c4382365d">
+          <ID>MonthName</ID>
+          <Name>Month</Name>
+          <SourceAttributeID>MonthName</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="740c12bb-57de-4075-ba7d-adcd404883f9">
+              <Language>3082</Language>
+              <Caption>Mes</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="bdcae600-1929-474b-9170-e3a7e495ad39">
+              <Language>1036</Language>
+              <Caption>Mois</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="d459f6c7-0424-42fa-9de5-d852f4bc0198">
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <SourceAttributeID>TimeKey</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="9d9b854c-63f5-4a8f-86c8-ad221dc920b5">
+              <Language>3082</Language>
+              <Caption>Fecha</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="58bebc13-523e-4a5b-995b-c2b35a7f59ea">
+              <Language>1036</Language>
+              <Caption>Date</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="0c7a4de0-ff50-4c71-b08e-4e047f5b7da8">
+      <ID>Hierarchy 1</ID>
+      <Name>Calendar Weeks</Name>
+      <DisplayFolder>Calendar</DisplayFolder>
+      <Translations>
+        <Translation dwd:design-time-name="77099087-a44f-47b8-98f7-31e807e8ae1b">
+          <Language>3082</Language>
+          <Caption>Semana del Calendario</Caption>
+          <DisplayFolder>Calendario</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="2c9fb2fe-6115-4e5b-bc99-25689ee2ec70">
+          <Language>1036</Language>
+          <Caption>Semaine Fiscal</Caption>
+          <DisplayFolder>Calendrier</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AllMemberName>All Periods</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation dwd:design-time-name="a287d972-174e-4f95-8582-287b637a835e">
+          <Language>3082</Language>
+          <Caption>Todos los Períodos</Caption>
+        </AllMemberTranslation>
+        <AllMemberTranslation dwd:design-time-name="341f141a-cc9d-4742-89a9-ca9e6f7cffdd">
+          <Language>1036</Language>
+          <Caption>Toutes les Périodes</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level dwd:design-time-name="0b26ddb0-31f6-456a-b88f-a44402e2b6a9">
+          <ID>Calendar Year</ID>
+          <Name>Calendar Year</Name>
+          <SourceAttributeID>CalendarYear</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="fbcb5b41-d9e4-4fe3-ad9a-7f9af25a0262">
+              <Language>3082</Language>
+              <Caption>Año Calendario</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="4baf9000-ca55-4c79-8966-136566ff244a">
+              <Language>1036</Language>
+              <Caption>Année Civile</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="ac516c23-dbd2-440d-904c-dbf08be6d84b">
+          <ID>Calendar Week</ID>
+          <Name>Calendar Week</Name>
+          <SourceAttributeID>WeekNumberOfYear</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="a629435f-cf4f-4c18-a183-de886f23aa7a">
+              <Language>3082</Language>
+              <Caption>Semana del Calendario</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="5ec5a95d-faea-4765-97d2-490757811244">
+              <Language>1036</Language>
+              <Caption>Semaine Civile</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="50d9ddc2-f35f-4fde-a74a-bd16b9498e92">
+      <ID>Hierarchy 2</ID>
+      <Name>Fiscal Weeks</Name>
+      <DisplayFolder>Fiscal</DisplayFolder>
+      <Translations>
+        <Translation dwd:design-time-name="d8f2a97f-a1e7-4413-abbd-a468146c98c8">
+          <Language>3082</Language>
+          <Caption>Semana Fiscal del Año</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+        <Translation dwd:design-time-name="4466423f-9909-47d9-94ec-ff730f40a7b8">
+          <Language>1036</Language>
+          <Caption>Semaine de l'Année Fiscale</Caption>
+          <DisplayFolder>Fiscal</DisplayFolder>
+        </Translation>
+      </Translations>
+      <AllMemberName>All Periods</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation dwd:design-time-name="af88ecf9-b09d-4074-a83e-7704ee836b81">
+          <Language>3082</Language>
+          <Caption>Todos los Períodos</Caption>
+        </AllMemberTranslation>
+        <AllMemberTranslation dwd:design-time-name="3596b4c3-6973-4fa3-b182-eeef5b2b1281">
+          <Language>1036</Language>
+          <Caption>Toutes les Périodes</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level dwd:design-time-name="aa5da582-5750-41f6-8741-e5ecd9478ee7">
+          <ID>Fiscal Year</ID>
+          <Name>Fiscal Year</Name>
+          <SourceAttributeID>Fiscal Year</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="1526fa35-938e-40fd-8ad2-bacc3b880f63">
+              <Language>3082</Language>
+              <Caption>Año Fiscal</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="e4d40dfe-7d87-42af-9c2b-2bbba0ac07b1">
+              <Language>1036</Language>
+              <Caption>Année Fiscale</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="9804fccd-e614-4572-8e6f-c2054e7b9bb5">
+          <ID>Fiscal Week</ID>
+          <Name>Fiscal Week</Name>
+          <SourceAttributeID>Fiscal Week</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="4f8ad7bc-44c4-4f65-8349-af1b38963a44">
+              <Language>3082</Language>
+              <Caption>Semana Fiscal</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="4ec88268-4207-468d-a510-83b20a761494">
+              <Language>1036</Language>
+              <Caption>Semaine Fiscale</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="44010087-ea0e-459d-972f-1be9629bf0a3">
+      <ID>Hierarchy 3</ID>
+      <Name>Calendar-To-Fiscal Year</Name>
+      <Levels>
+        <Level dwd:design-time-name="2d97f4d1-50b1-4d74-ba46-61cf7793e427">
+          <ID>Calendar Year</ID>
+          <Name>Calendar Year</Name>
+          <SourceAttributeID>CalendarYear</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="325647b0-8469-46f4-b80a-35fd3267c96c">
+          <ID>Fiscal Year</ID>
+          <Name>Fiscal Year</Name>
+          <SourceAttributeID>Fiscal Year</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="751dfd64-681e-4eae-a175-3620dd082ff6">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="84f06c7a-fc66-4ead-9298-4fdeec0dd6c6" />
+  </ProactiveCaching>
+</Dimension>

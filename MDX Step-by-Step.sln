@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "MDX Step-by-Step", "MDX Step-by-Step\MDX Step-by-Step.dwproj", "{CB08633C-CEA3-46AB-8FA7-C018D228DAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB08633C-CEA3-46AB-8FA7-C018D228DAFF}.Development|Default.ActiveCfg = Development
+		{CB08633C-CEA3-46AB-8FA7-C018D228DAFF}.Development|Default.Build.0 = Development
+		{CB08633C-CEA3-46AB-8FA7-C018D228DAFF}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {243DE979-0F7C-4C71-9D1C-E13A7DB74893}
+	EndGlobalSection
+EndGlobal

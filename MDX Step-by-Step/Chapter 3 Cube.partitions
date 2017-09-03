@@ -1,0 +1,33 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bb2b0d45-eeb9-40cd-80db-1bce52f7a8c7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cube Space Demo</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Reseller Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="331f15c6-c339-497f-95c2-ba01c5fb0689">
+          <ID>Reseller Sales</ID>
+          <Name>Reseller Sales</Name>
+          <CreatedTimestamp>2008-07-17T04:02:46Z</CreatedTimestamp>
+          <LastSchemaUpdate>2008-07-17T04:19:41Z</LastSchemaUpdate>
+          <LastProcessed>2008-07-17T04:19:58Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="919f4033-b9c6-48b6-904c-2dcea9bcbb8d">
+            <DataSourceViewID>Cube Space Demo</DataSourceViewID>
+            <TableID>dbo_FactResellerSales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="135566ec-0eb8-4447-9ff5-e24fc6abbfa0">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="7f837a59-0dd7-40aa-8ee9-91596c6a82fe" />
+          </ProactiveCaching>
+          <EstimatedSize>87507</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

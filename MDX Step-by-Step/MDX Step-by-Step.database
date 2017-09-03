@@ -1,0 +1,77 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b0a260ed-42b1-408c-956c-7cb91e90a0be" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>MDX Step-by-Step</ID>
+  <Name>MDX Step-by-Step</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <EstimatedSize>36101209</EstimatedSize>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <Accounts>
+    <Account dwd:design-time-name="5729e1e6-ffc0-4513-a969-ef0fb2455837">
+      <AccountType>Statistical</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+      <Aliases>
+        <Alias>Statistical</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="da4fd1a9-c6fb-4d6f-8561-7dcc2a463526">
+      <AccountType>Liability</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+      <Aliases>
+        <Alias>Liabilities</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="451bcbbd-7f9b-4fea-9089-6eae9f666785">
+      <AccountType>Asset</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+      <Aliases>
+        <Alias>Assets</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="8389c476-144f-4d74-9ad4-b749dc19f160">
+      <AccountType>Balance</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+      <Aliases>
+        <Alias>Balances</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="e549cec2-34df-433b-b781-956a84182888">
+      <AccountType>Flow</AccountType>
+      <AggregationFunction>LastNonEmpty</AggregationFunction>
+      <Aliases>
+        <Alias>Flow</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="f9eea6fb-014a-4aef-be6e-c55a3dad279a">
+      <AccountType>Expense</AccountType>
+      <Aliases>
+        <Alias>Expenditures</Alias>
+      </Aliases>
+    </Account>
+    <Account dwd:design-time-name="cba83138-bf94-4720-8544-db037504c71f">
+      <AccountType>Income</AccountType>
+      <Aliases>
+        <Alias>Revenue</Alias>
+      </Aliases>
+    </Account>
+  </Accounts>
+  <Translations>
+    <Translation dwd:design-time-name="15acc5dd-ec2b-4979-b683-6f4188a0d7ce">
+      <Language>3082</Language>
+      <Caption>Adventure Works</Caption>
+      <Description>Un modelo dimensional unificado (UDM) que abarca la Adventure Works el almacén de los datos.</Description>
+    </Translation>
+    <Translation dwd:design-time-name="735d169d-1443-4eba-87de-911b102a28e0">
+      <Language>1036</Language>
+      <Caption>Adventure Works</Caption>
+      <Description>Un modèle dimensionnel unifié qui contient l'entrepot de données complet de Adventure Works.</Description>
+    </Translation>
+  </Translations>
+</Database>
